@@ -23,8 +23,10 @@ jobs:
       - checkout
       - run:
           name: Run tests
-          command: cd src
-      - cdsouce: ls -a
+          command:
+             cd src
+             ls -a
+          
           
 
 workflows:
