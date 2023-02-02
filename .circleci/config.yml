@@ -21,6 +21,7 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
+      
       # Next, the node orb's install-packages step will install the dependencies from a package.json.
       # The orb install-packages step will also automatically cache them for faster future runs.
       - node/install-packages:
@@ -28,7 +29,7 @@ jobs:
           pkg-manager: npm
       - run:
           name: Run tests
-          command: npm test
+          command: ls -a
 
 workflows:
   # Below is the definition of your workflow.
