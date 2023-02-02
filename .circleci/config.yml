@@ -23,7 +23,8 @@ jobs:
       - checkout
       - run:
           name: Run tests
-          command: ls -a 
+          command: cd src
+                    ls -A
 
 workflows:
   # Below is the definition of your workflow.
