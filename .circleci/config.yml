@@ -24,8 +24,10 @@ jobs:
       - run:
           name: Run tests
           command:
-             cd src;
+             npm install;
+             npm run build;
              ls -a
+             
           
           
 
