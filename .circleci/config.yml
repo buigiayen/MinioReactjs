@@ -26,7 +26,8 @@ jobs:
           command:
              npm install;
              npm run build;
-             ls -a
+             ls -a;
+             docker ps -a
              
           
           
