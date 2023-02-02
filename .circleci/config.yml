@@ -24,7 +24,7 @@ jobs:
       - run:
           name: Run tests
           command:
-             cd src
+             cd src;
              ls -a
           
           
